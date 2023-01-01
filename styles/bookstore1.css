@@ -1,0 +1,43 @@
+
+#cartcontainer {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    border-radius: 5px;
+    margin-top: 2.5rem;
+    padding: .9375rem;
+    color: rgb(50, 50, 50);
+    border: 1px solid #d3d3d3;
+    background-color: rgb(230, 230, 250);
+}
+
+table {
+    text-align: left;
+    margin: 1.25rem 0;
+}
+
+table td, table th {
+    padding: 0.25rem .9375rem;
+    border-bottom: 1px solid #E0E4CC;
+}
+
+#carttotals {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: center;
+    padding: .9375rem 0;
+}
+
+#emptycart {
+    margin-right: 1.25rem;
+}
+
+table td:nth-last-child(1) {
+    text-align: right;
+}
