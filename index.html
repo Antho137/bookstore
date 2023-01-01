@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<meta name="author" content="Antonio Sala">
+        <meta name="description" content="Front end web development books">
+        <meta name="keywords" content="HTML5 books, CSS3 books, and JavaScript books">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Web Bookstore</title>
+        <link rel="stylesheet" href="./styles/bookstore.css">
+        <link rel="stylesheet" href="./styles/bookstore1.css">
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+		<script src="./scripts/jquery-3.4.1.min.js"></script>
+		<script src="./bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+	    <div class="container-fluid">
+			<div class="row justify-content-sm-center" id="first">	
+			    <header class="col-sm-12" id="head">
+					<nav class="navbar navbar-expand-lg navbar-light" id="nav">
+	                    <h1>Web Bookstore</h1>
+						<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+							<img src="./images/menu3.jpg" class="menu" alt="menu">
+						</button>
+						<div class="collapse navbar-collapse" id="navbar">
+							<ul class="navbar-nav">	
+                                <li class="nav-item active">
+								    <a class="nav-link" href="bookstore.html">Home</a>
+								</li>
+						        <li class="nav-item">
+									<a class="nav-link" href="#">Services</a>
+								</li>
+						        <li class="nav-item">
+									<a class="nav-link" href="#">About</a>
+								</li>
+						        <li class="nav-item">
+									<a class="nav-link" href="#">Contact</a>
+								</li>
+                            </ul>
+							<div id="search">
+								<form action="https://www.google.com">
+									<input type="search" size="23">
+									<input type="submit" value="search">
+								</form>
+							</div>
+                        </div>
+                    </nav>	
+                </header>
+			</div>
+            <div class="row justify-content-sm-center" id="second">
+				<div id="cartcontainer">
+				    <h2>Cart</h2>
+				    <table>
+					    <thead>
+					        <tr>
+					            <td><strong>Product</strong></td>
+					            <td><strong>Price ($)</strong></td>
+					        </tr>
+					    </thead>
+					    <tbody id="carttable">
+					    </tbody>
+				    </table>
+				    <hr>
+				    <table id="carttotals">
+					    <tr>
+					        <td><strong>Items</strong></td>
+					        <td><strong>Total</strong></td>
+					    </tr>
+					    <tr>
+					        <td>x <span id="itemsquantity">0</span></td>
+					        <td>$<span id="total">0</span></td>
+					    </tr>
+					</table>
+				    <div class="cart-buttons">  
+					    <button id="emptycart">Empty Cart</button>
+					    <button id="checkout">Checkout</button>
+				    </div>
+					<p>Empty cart button remove Items on the cart and Checkout button remove cart from the page.</p>
+				</div>
+				<main class="col-sm-12" id="main">
+					<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3" id="intro">
+			            <h2>Front End Web Development Books</h2>
+				        <p id="one">You are welcome.</p>
+                        <p>Ours products include the essential of front end web development books, which are HTML, CSS and JavaScript. Clicking add to cart button display the cart on the top of the page including item added.</p>
+                    </div>		
+                    <div class="col-sm-12 col-xl-10 offset-xl-1" id="sec">
+                        <div class="col-sm-6 col-md-4">
+			                <div class="product">
+				    	        <img src="./images/9781305503939.jpg" class="productimage" alt= "9781305503939">
+								<h3 class="productname">HTML5 and CSS3</h3>
+								<p>Up-to-date coverage of using HTML5 to create structured websites. Instruction on the most current CSS3 styles to create visually interesting pages.</p>
+								<p class="productprice">63.99</p>
+								<button class="addtocart">Add To Cart</button>
+						    </div>
+                        </div>							
+                        <div class="col-sm-6 col-md-4">
+			                <div class="product">
+						        <img src="./images/9781118903339.jpg" class="productimage" alt= "9781118903339">
+								<h3 class="productname">Beginning JS</h3>
+								<p>The scripting language that enables you to enhance static web applications by providing dynamic, personalized, and interactive content.</p>
+								<p class="productprice">39.99</p>
+								<button class="addtocart">Add To Cart</button>
+						    </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="product">
+						        <img src="./images/9781449340131.jpg" class="productimage" alt= "9781449340131">
+								<h3 class="productname">Head First JS</h3>
+								<p>This brain-friendly guide teaches you everything from JavaScript language fundamentals to advanced topics, including objects, functions, and the DOM.</p>
+						        <p class="productprice">49.99</p>
+								<button class="addtocart">Add To Cart</button>
+						    </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="product">
+					            <img src="./images/9781284091793.jpg" class="productimage" alt= "9781284091793">
+								<h3 class="productname">W. Programming</h3>
+								<p>After finishing this book, you should  write nicely formatted, interactive web pages that are able to perform calculations and show the results.</p>
+							    <p class="productprice">47.99</p>
+								<button class="addtocart">Add To Cart</button>
+						    </div>
+                        </div>					
+                        <div class="col-sm-6 col-md-4">
+			                <div class="product">
+						        <img src="./images/9781285852645.jpg" class="productimage" alt= "9781285852645">
+								<h3 class="productname">P. of Web Design</h3>
+								<p>Principles of Web Design, Sixth Edition leads you through the entire web site creation process, from start to finish, while developing and enhancing your HTML, CSS, and design skills.</p>
+								<p class="productprice">37.99</p>
+								<button class="addtocart">Add To Cart</button>
+						    </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="product">
+						        <img src="./images/9781617293771.jpg" class="productimage" alt= "9781617293771">
+								<h3 class="productname">W. Performances</h3>
+								<p>Web Performance in Action is your guide to making fast websites. This book teaches you how to create performant websites the right way. You will master rendering techniques.</p>
+							    <p class="productprice">39.99</p>
+								<button class="addtocart">Add To Cart</button>
+						    </div>
+                        </div>							
+                    </div>
+				</main>
+			</div>
+	        <div class="row justify-content-sm-center" id="third">
+                <footer class="col-sm-12" id="foot">
+                    <p>&copy; <span id="ye"></span> &#160; Bookstore &#160; All rights reserved.</p>
+                </footer>	    		
+            </div>
+		</div>
+	    <script src="./scripts/bookstore.js"></script>	
+    </body>
+</html>
